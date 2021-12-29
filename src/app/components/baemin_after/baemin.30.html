@@ -1,0 +1,26 @@
+<ion-content>
+  <div class="container">
+      <img src="../../../assets/image/baemin/guide_off/38_01.jpg">
+      <div class="img_wrap">
+          <img src="../../../assets/image/baemin/guide_off/38_02.jpg">
+          <div class="card_num_cover">
+              <form action="">
+                  <ion-item>
+                    <ion-input #one type="tel" [maxlength]="4" autofocus></ion-input>
+                    <ion-input #two type="tel" [maxlength]="4"></ion-input>
+                    <ion-input #three type="tel" [maxlength]="4"></ion-input>
+                    <ion-input #four type="tel" [maxlength]="4"></ion-input>
+                  </ion-item>
+                  <div class="cvc_wrap">
+                    <span>카드 cvc</span>
+                    <ion-item>
+                      <ion-input #one type="tel" maxlength="3"></ion-input>
+                  </ion-item>
+                  </div>
+              </form>
+          </div>
+      </div>
+      <img src="../../../assets/image/baemin/guide_off/38_03.jpg" (click)="goNext()">
+      <img src="../../../assets/image/baemin/guide_off/38_04.jpg">
+  </div>
+</ion-content>

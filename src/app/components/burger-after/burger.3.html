@@ -1,0 +1,20 @@
+<ion-content>
+  <div class="container">
+    <img src="../../../assets/image/mcdonald/guide_off/02_01.jpg" alt="">
+    <div class="img_cover">
+      <img src="../../../assets/image/mcdonald/guide_off/02_02.jpg" alt="">
+      <div class="text_cover text_cover_burger">
+        <ion-item>
+          <ion-input #add (click)="openDaumPopup()" placeholder="지번, 도로명, 건물명으로 검색해주세요."></ion-input>
+        </ion-item>
+      </div>
+      <div #daum_popup class="address_api">
+        <img (click)="closeDaumPopup()" src="https://t1.daumcdn.net/postcode/resource/images/close.png" />
+      </div>
+    </div>
+    <img src="../../../assets/image/mcdonald/guide_off/02_03.png" alt="">
+    <div class="fix_button">
+      <img src="../../../assets/image/mcdonald/guide_off/01_menu_bar.png" alt="">
+    </div>
+  </div>
+</ion-content>

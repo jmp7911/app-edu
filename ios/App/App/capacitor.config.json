@@ -1,0 +1,6 @@
+{
+	"appId": "com.ktcs.edu",
+	"appName": "kt 교육용 체헙앱",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

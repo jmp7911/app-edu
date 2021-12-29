@@ -1,0 +1,19 @@
+<ion-content>
+    <div class="container color">
+        <img src="../../assets/image/board/01_01.jpg" alt="01.인증">
+        
+            <div class="fix_button">
+                <form [formGroup]="codeForm" (ngSubmit)="submit()">
+            <div class="img_cover">
+                <img src="../../assets/image/board/01_02.jpg" alt="01.인증">    
+                <ion-input (ionBlur)="blur()" (ionFocus)="focus($event)" formControlName="code" placeholder="인증번호를 입력해주세요"></ion-input>
+            </div>
+            <img src="../../assets/image/board/01_03.jpg" alt="01.인증">
+                <ion-button type="submit" class="white">
+                    <img src="../../assets/image/board/01_04.jpg" alt="01.인증">
+                </ion-button>
+            </form>
+            </div>
+        
+    </div>
+</ion-content>

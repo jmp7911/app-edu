@@ -1,0 +1,35 @@
+<ion-content>
+  <div class="container">
+    <img src="../../../assets/image/naver/guide_off/25_01.jpg" alt="">
+    <div class="text_container">
+      <div class="text_cover text_cover_naver">
+        <div class="order">
+          <p>주문금액</p>
+          <p><span>{{ price }}</span>원</p>
+        </div>
+        <div class="order2 order">
+          <p>ㄴ상품금액</p>
+          <p><span>{{price}}</span>원</p>
+        </div>
+        <div class="order2 order">
+          <p>ㄴ배송비</p>
+          <p><span>0</span>원</p>
+        </div>
+        <div class="order2 order">
+          <p>ㄴ쿠폰할인금액</p>
+          <p><span>{{coupon}}</span>원</p>
+        </div>
+        <div class="order text_wrap">
+          <p>카드 일반결제</p>
+          <p><span>{{afterDiscountPrice}}</span>원</p>
+        </div>
+      </div>
+    </div>
+    <img src="../../../assets/image/naver/guide_off/25_03.jpg" alt="">
+    <img src="../../../assets/image/naver/guide_off/25_04.jpg" alt="" (click)="goNext()">
+  </div>
+  <div class="slide_img">
+    <img src="../../../assets/image/scroll.png" alt="" class="scrollImg">
+    <img src="../../../assets/image/arrow.png" alt="">
+  </div>
+</ion-content>

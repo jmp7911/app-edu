@@ -1,0 +1,8 @@
+<ion-fab #fab horizontal="end" vertical="bottom" slot="fixed">
+  <ion-fab-button color="light"></ion-fab-button>
+  <ion-fab-list side="start">
+    <img src="../../../assets/icon/btn_tip.png" *ngIf="this.loaderService.enableTip" alt="menu" (click)=openTip()>
+    <img src="../../../assets/icon/btn_home.png" alt="menu" (click)="openHome()">
+    <img src="../../../assets/icon/btn_list.png" alt="menu" (click)="openCategory()">
+  </ion-fab-list>
+</ion-fab>

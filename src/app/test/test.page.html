@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-title>다음 우편번호 테스트</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="frm">
+      <ion-item>
+          <ion-label position="floating">자택주소</ion-label>
+          <ion-input name="addr1" formControlName="addr1" (click)="openDaumPopup()"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label position="floating">상세주소</ion-label>
+          <ion-input name="addr2" formControlName="addr2"></ion-input>
+      </ion-item>
+  </form>
+</ion-content>
+
+<div #daum_popup style="display:none;position:fixed;overflow:hidden;z-index:1;-webkit-overflow-scrolling:touch;">
+  <img (click)="closeDaumPopup()" src="//t1.daumcdn.net/postcode/resource/images/close.png" style="cursor:pointer;position:absolute;right:-3px;top:-3px;z-index:1" />
+</div>

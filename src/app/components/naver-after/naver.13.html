@@ -1,0 +1,52 @@
+<ion-content>
+    <div class="container">
+      <img src="../../../assets/image/naver/guide_off/21_01_01.png" alt="">
+      <div class="shopping_info">
+        <div class="shop_name">
+          <span>노스페이스</span>
+          <span><ion-icon name="cube-outline"></ion-icon>무료</span>
+        </div>
+        <div class="shop_detail">
+          <div class="product_thumb">
+            <img src="../../../assets/image/naver/guide_off/17_01.jpg" alt="">
+          </div>
+          <div class="product_text">
+            <p>[쇼핑윈도] 노스페이스</p>
+            <p>[노스페이스] 20F/W 에어 라이트...</p>
+            <p><span>옵션</span>색상 : <strong>{{ color }}</strong>/ 사이즈: <strong>{{ size }}</strong> | <strong>{{ totalCount }}</strong>개</p>
+            <p><strong>{{ totalAmount }}</strong>원</p>
+          </div>
+        </div>
+        <div class="shop_point">
+          <div class="discount_name">
+            <p>상품 할인</p>
+          </div>
+          <div class="discount_select">
+            <ion-list>
+              <ion-radio-group value="0">
+                <ion-item>
+                  <ion-label>즉시할인 - 41,850원</ion-label>
+                  <ion-radio slot="start" color="success" value="0" (ionFocus)="selectDiscount($event)"></ion-radio>
+                </ion-item>
+                <ion-item>
+                  <ion-label>적용안함</ion-label>
+                  <ion-radio slot="start" color="success" value="41850" (ionFocus)="selectDiscount($event)"></ion-radio>
+                </ion-item>
+              </ion-radio-group>
+            </ion-list>
+          </div>
+        </div>
+        <div class="total_price">
+          <span>주문금액</span>
+          <span><strong>{{ afterDiscountPrice }}</strong>원</span>
+        </div>
+      </div>
+      <img src="../../../assets/image/naver/guide_off/21_01_03.png" alt="">
+      <img src="../../../assets/image/naver/guide_off/21_02.png" alt="" (click)="goNext()">
+      <img src="../../../assets/image/naver/guide_off/21_03.png" alt="">
+    </div>
+    <div class="slide_img">
+      <img src="../../../assets/image/scroll.png" alt="" class="scrollImg">
+      <img src="../../../assets/image/arrow.png" alt="">
+    </div>
+  </ion-content>

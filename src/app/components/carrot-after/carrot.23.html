@@ -1,0 +1,46 @@
+<ion-content>
+    <div class="container">
+        <img src="../../../assets/image/carrot/guide_off/23_01.png" alt="당근" (click)="goNext()">
+        <img src="../../../assets/image/carrot/guide_off/23_02.png" alt="당근">
+        <div class="img_cover">
+            <div class="text_cover text_write text_write2">
+                <ion-list class="carrot_write_form">
+                    <ion-item>
+                        <ion-input #subject placeholder="제목을 입력하세요."></ion-input>
+                    </ion-item>
+                    <ion-item>
+                        <ion-select #category placeholder="카테고리를 선택하세요" ok-text="확인" cancel-text="취소">
+                            <ion-select-option value="생활가전">생활가전</ion-select-option>
+                            <ion-select-option value="의류">의류</ion-select-option>
+                            <ion-select-option value="전자제품">전자제품</ion-select-option>
+                            <ion-select-option value="생필품">생필품</ion-select-option>
+                        </ion-select>
+                    </ion-item>
+                    <ion-item>
+                        <div class="write_wrap">
+                            <div class="write_input">
+                                <ion-item>
+                                    <ion-input #price placeholder="가격을 입력하세요" type="number"></ion-input>
+                                </ion-item>
+                            </div>
+                            <div class="write_input">
+                                <ion-item>
+                                    <div class="write_input_check">
+                                        <ion-checkbox></ion-checkbox>
+                                        <ion-label>가격제안 받기</ion-label>
+                                    </div>
+                                </ion-item>
+                            </div>
+                        </div>
+                    </ion-item>
+                    <ion-item>
+                        <ion-textarea #detail placeholder="상세 내용을 입력하세요."></ion-textarea>
+                    </ion-item>
+                </ion-list>
+            </div>
+        </div>
+        <div class="fix_button">
+            <img src="../../../assets/image/carrot/guide_off/23_03.png" alt="당근">
+        </div>
+    </div>
+</ion-content>

@@ -1,0 +1,88 @@
+<ion-content>
+  <div class="container">
+    <img src="../../../assets/image/korail/guide_on/27_back_01.png" alt="코레일">
+    <div class="img_cover">
+      <img src="../../../assets/image/korail/guide_off/27_02.jpg" alt="">
+      <div class="korail_card">
+        <ul>
+          <li>
+            <span>카드번호</span>
+            <div class="input_box">
+              <ion-item>
+                <div class="card_num">
+                  <ion-input #one type="tel" [maxlength]="4"></ion-input>
+                    <ion-input #two type="tel" [maxlength]="4"></ion-input>
+                    <ion-input #three type="tel" [maxlength]="4"></ion-input>
+                    <ion-input #four type="tel" [maxlength]="4"></ion-input>
+                </div>
+              </ion-item>
+            </div>
+          </li>
+          <li>
+            <span>유효기간</span>
+            <div class="input_box input_box2">
+              <ion-item>
+                <div class="card_num card_pw">
+                  <ion-input #expireMonth type="tel" [maxlength]="2"></ion-input>
+                  <ion-label>월</ion-label>
+                </div>
+              </ion-item>
+              <ion-item>
+                <div class="card_num card_pw">
+                  <ion-input #expireYear type="tel" [maxlength]="2"></ion-input>
+                  <ion-label>년</ion-label>
+                </div>
+              </ion-item>
+            </div>
+          </li>
+          <li>
+            <span>비밀번호</span>
+            <div class="input_box">
+              <ion-item>
+                <div class="card_num card_pw">
+                  <ion-input #password type="password" [maxlength]="2"></ion-input>
+                  <ion-label>**</ion-label>
+                </div>
+              </ion-item>
+            </div>
+          </li>
+          <li>
+            <span>카드 종류</span>
+            <div class="input_box">
+              <ion-radio-group #cardType>
+                <ion-item class="card_sort">
+                  <div class="card_num">
+                    <ion-radio></ion-radio>
+                    <ion-label>개인</ion-label>
+                  </div>
+                </ion-item>
+                <ion-item>
+                  <div class="card_num">
+                    <ion-radio></ion-radio>
+                    <ion-label>법인</ion-label>
+                  </div>
+                </ion-item>
+              </ion-radio-group>
+            </div>
+          </li>
+          <li>
+            <span>인증 번호</span>
+            <div class="input_box">
+              <ion-item>
+                <div class="card_num card_agree">
+                  <ion-input #cert type="tel" [maxlength]="6"></ion-input>
+                  <ion-label>주민번호 앞 6자리</ion-label>
+                </div>
+              </ion-item>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <img src="../../../assets/image/korail/guide_off/27_03.png" alt="">
+    </div>
+    <div class="fix_button">
+      <img src="../../../assets/image/korail/guide_on/27_but_01.png" alt="코레일">
+      <img src="../../../assets/image/korail/guide_on/28_but_02.png" alt="코레일" (click)="goNext()">
+    </div>
+  </div>
+</ion-content>

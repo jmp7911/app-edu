@@ -1,0 +1,23 @@
+<ion-content>
+    <div class="container">
+        <img src="../../../assets/image/carrot/guide_off/08_01.jpg" alt="당근"  (click)="goNext(10)">
+        <div class="img_cover">
+            <img src="../../../assets/image/carrot/guide_off/08_01_01.jpg" alt="당근">
+            <div class="text_cover text_cover_carrot">
+                <p>우동과 근처 동네 <span>{{cnt}}</span>개</p>
+                <p>선택한 범위의 게시글만 볼 수 있어요.</p>
+            </div>
+        </div>
+        <div class="img_cover img_cover_carrot">
+            <img src="../../../assets/image/carrot/guide_off/08_02.jpg" alt="당근">
+            <div class="ion_range">
+                <ion-list>
+                    <ion-item>
+                        <ion-range min="5" max="30" step="1" value="10" snaps="true" ticks="false" (ionChange)="changeRange($event)"></ion-range>
+                    </ion-item>
+                </ion-list>
+            </div>
+        </div>
+        <img src="../../../assets/image/carrot/guide_off/08_03.jpg" alt="당근">
+    </div>
+</ion-content>

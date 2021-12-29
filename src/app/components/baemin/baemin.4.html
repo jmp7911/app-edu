@@ -1,0 +1,22 @@
+<ion-content>
+  <div class="container">
+    <div class="img_margin">
+      <img src="../../../assets/image/baemin/guide_on/04_01.jpg">
+      <div class="img_cover">
+        <img src="../../../assets/image/baemin/guide_on/04_02.jpg">
+        <div class="text_cover">
+          <p>{{ add }}</p>
+          <p><span>도로명</span>{{ roadAdd }}</p>
+        </div>
+      </div>
+      <div class="img_cover">
+          <img src="../../../assets/image/baemin/guide_on/04_03_01.jpg">
+          <ion-input #addDetail class="search_input2" (keyup.enter)="checkValue()" autofocus></ion-input>
+      </div>
+      <img src="../../../assets/image/baemin/guide_on/04_03_02.jpg">
+      <div class="fix_button" (click)="goNext()">
+        <img src="../../../assets/image/baemin/guide_on/04_03_03.jpg">
+      </div>
+    </div>
+  </div>
+</ion-content>

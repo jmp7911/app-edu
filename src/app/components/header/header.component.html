@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <div class="header_wrap">
+        <img *ngIf="!isIOS" src="./../../../assets/icon/logo_ktcs.png" alt="logo" (click)="openHome()">
+        <img *ngIf="!isIOS" src="./../../../assets/icon/logo_kr.png" alt="logo" (click)="openHome()">
+        <img *ngIf="isIOS && this.loaderService.self !== 'home'" src="./../../../assets/icon/chevron_left.jpg" class="back_btn" alt="logo" (click)="backButtonEvent()">
+        <img *ngIf="isIOS" src="./../../../assets/icon/ktcs_logo_new.png" alt="logo" class="logo" (click)="openHome()">  
+      </div>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-fab #fab horizontal="end" vertical="top" slot="fixed" *ngIf="isCertify" edge>
+  <ion-fab-button color="light"></ion-fab-button>
+  <ion-fab-list side="bottom">
+    <img src="../../../assets/icon/but_02_tip.png" *ngIf="this.loaderService.enableTip" alt="menu" (click)=openTip()>
+    <img src="../../../assets/icon/but_03_selec.png" alt="menu" (click)="openCategory()">
+    <img src="../../../assets/icon/but_04_home.png" alt="menu" (click)="openHome()">
+  </ion-fab-list>
+</ion-fab>

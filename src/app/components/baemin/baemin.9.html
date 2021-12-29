@@ -1,0 +1,15 @@
+<ion-content>
+    <div class="container">
+    <div class="img_margin">
+        <img src="../../../assets/image/baemin/guide_on/09_01_01.jpg">
+        <div class="img_cover">
+            <img src="../../../assets/image/baemin/guide_on/09_01_02.jpg">
+            <ion-input #add class="search_input2" (click)="openDaumPopup()"></ion-input>
+        </div>
+        <div #daum_popup class="address_api">
+            <img (click)="closeDaumPopup()" src="https://t1.daumcdn.net/postcode/resource/images/close.png" style="cursor:pointer;position:absolute;right:-3px;top:-3px;z-index:1" />
+        </div>
+        <img src="../../../assets/image/baemin/guide_on/09_02.png">
+    </div>
+    </div>
+</ion-content>
